@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background: #2c3e50;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 300px;
+}
+
+input {
+  width: 100%;
+  height: 60px;
+  text-align: right;
+  font-size: 2em;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #34495e;
+  color: white;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #808080; /* Grey color */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a9a9a9; /* Light grey on hover */
+}
+
+button.operator {
+  background-color: #808080; /* Grey color */
+}
+
+button.operator:hover {
+  background-color: #a9a9a9; /* Light grey on hover */
+}
+
+button.clear {
+  background-color: #808080; /* Grey color */
+}
+
+button.clear:hover {
+  background-color: #a9a9a9; /* Light grey on hover */
+}
+
+button.equal {
+  background-color: #808080; /* Grey color */
+  grid-column: span 2;
+}
+
+button.equal:hover {
+  background-color: #a9a9a9; /* Light grey on hover */
+}
